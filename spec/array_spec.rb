@@ -17,4 +17,8 @@ describe Array do
     expect( multiple_nested_array.flat_it ).to eq(flat_array)    
   end
 
+  it "should not raise error for empty array" do
+    expect( [].flat_it ).to eq([])
+  end
+
 end
